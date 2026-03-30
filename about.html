@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story - SMJ Cream</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fcfaf8',
+                            100: '#f5f0e6',
+                            200: '#eadbc3',
+                            300: '#ddbf9b',
+                            400: '#d1a070',
+                            500: '#c8874f',
+                            600: '#bb7041',
+                            700: '#9c5737',
+                            800: '#804832',
+                            900: '#673d2b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-50 antialiased selection:bg-brand-200 selection:text-brand-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <!-- ... navigation content (same as index) ... -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-serif text-3xl font-bold text-brand-900 tracking-widest uppercase">SMJ</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-700 transition-colors">Home</a>
+                    <a href="shop.html" class="text-gray-600 hover:text-brand-700 transition-colors">Shop</a>
+                    <a href="about.html" class="text-brand-900 font-medium border-b-2 border-brand-900 pb-1">Story</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-brand-700 transition-colors">Contact</a>
+                    <a href="shop.html" class="bg-brand-800 text-white px-8 py-2.5 rounded-full hover:bg-brand-900 transition-all shadow-md">Buy Now</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-2 text-gray-600">Home</a>
+                <a href="shop.html" class="block px-3 py-2 text-gray-600">Shop</a>
+                <a href="about.html" class="block px-3 py-2 text-brand-900 font-medium">Story</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="pt-32 pb-20 bg-brand-100">
+        <div class="max-w-4xl mx-auto px-4 text-center fade-in">
+            <h1 class="text-4xl md:text-6xl font-serif text-brand-900 mb-6">Purity in Every Drop</h1>
+            <p class="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">We believe skincare should be an indulgent ritual, merging the best of nature with scientific innovation.</p>
+        </div>
+    </section>
+
+    <!-- Story Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in">
+                    <h2 class="text-3xl md:text-4xl font-serif text-brand-900 mb-6">The Journey to SMJ</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">It started with a simple question: why do we have to choose between natural ingredients and real results? For years, the skincare industry offered harsh chemicals for effectiveness, or ineffective natural remedies.</p>
+                    <p class="text-gray-600 leading-relaxed">SMJ Cream was born out of a desire for balance. We spent over five years formulating the perfect blend of botanical extracts and deeply hydrating elements to create a cream that transforms your skin naturally.</p>
+                </div>
+                <div class="relative fade-in hover-lift">
+                    <img src="assets/images/ingredients.png" alt="Natural Ingredients" class="w-full h-auto rounded-3xl shadow-xl object-cover aspect-video lg:aspect-square">
+                    <div class="absolute -bottom-6 -right-6 bg-brand-50 p-6 rounded-2xl shadow-lg border border-brand-100 hidden sm:block">
+                        <p class="font-serif text-brand-900 text-xl font-bold italic">"Nature's Luxury"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Ingredients -->
+    <section class="py-20 bg-brand-50 border-t border-brand-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-serif text-brand-900 mb-4">Inside The Jar</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">No secrets, just pure, potent ingredients meticulously sourced from around the globe.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow fade-in">
+                    <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-serif text-brand-900 mb-3">Shea Butter</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Sourced directly from West Africa, this deeply nourishing butter creates a protective barrier to lock in moisture.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow fade-in" style="transition-delay: 0.1s;">
+                    <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-serif text-brand-900 mb-3">Hyaluronic Acid</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">The ultimate hydrator. Draws moisture into the skin, plumping fine lines and delivering an instant dewy glow.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow fade-in" style="transition-delay: 0.2s;">
+                    <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-serif text-brand-900 mb-3">Chamomile Extract</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Renowned for its soothing properties, it calms redness and inflammation, making SMJ ideal for sensitive skin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-brand-50 pt-20 pb-10">
+        <!-- ... footer content ... -->
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-500 text-sm">&copy; 2026 SMJ Cosmetics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

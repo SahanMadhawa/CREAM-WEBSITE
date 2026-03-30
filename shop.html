@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - SMJ Cream</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fcfaf8', 100: '#f5f0e6', 200: '#eadbc3', 300: '#ddbf9b', 400: '#d1a070', 500: '#c8874f', 600: '#bb7041', 700: '#9c5737', 800: '#804832', 900: '#673d2b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-50">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-brand-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-serif text-3xl font-bold text-brand-900 tracking-widest uppercase">SMJ</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-700 transition-colors">Home</a>
+                    <a href="shop.html" class="text-brand-900 font-medium border-b-2 border-brand-900 pb-1">Shop</a>
+                    <a href="about.html" class="text-gray-600 hover:text-brand-700 transition-colors">Story</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-brand-700 transition-colors">Contact</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="text-brand-900 hover:opacity-70">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details -->
+    <section class="pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Product Image Gallery -->
+                <div class="space-y-4 fade-in">
+                    <div class="aspect-square bg-white rounded-3xl overflow-hidden shadow-xl p-8 flex items-center justify-center border border-brand-100">
+                        <img src="assets/images/hero.png" alt="SMJ Cream" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 rounded-xl">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="flex flex-col justify-center fade-in" style="transition-delay: 0.1s;">
+                    <nav class="flex text-sm text-gray-500 mb-6">
+                        <ol class="flex items-center space-x-2">
+                            <li><a href="index.html" class="hover:text-brand-700">Skincare</a></li>
+                            <li><svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg></li>
+                            <li class="text-brand-900 font-medium">Moisturizers</li>
+                        </ol>
+                    </nav>
+
+                    <h1 class="text-4xl md:text-5xl font-serif text-brand-900 mb-2">The Signature SMJ Cream</h1>
+                    
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <!-- Print 4 more stars -->
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <span class="text-sm text-gray-500 ml-3">(128 Reviews)</span>
+                    </div>
+
+                    <div class="text-3xl font-medium text-brand-900 mb-6">$85.00</div>
+                    
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Our award-winning daily moisturizer. Rich, buttery texture that melts into the skin instantly, delivering 24-hour hydration, reducing visible signs of aging, and leaving you with a radiant, youthful glow. 
+                    </p>
+
+                    <div class="mb-8">
+                        <span class="block text-sm font-medium text-brand-900 mb-3 uppercase tracking-wider">Size</span>
+                        <div class="flex gap-4">
+                            <button class="border-2 border-brand-900 text-brand-900 font-medium px-6 py-2 rounded-full">50 ml</button>
+                            <button class="border-2 border-transparent bg-white text-gray-500 font-medium px-6 py-2 rounded-full hover:border-brand-200 transition-all shadow-sm">100 ml</button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                        <div class="flex items-center border-2 border-brand-200 rounded-full bg-white self-start sm:w-auto w-full">
+                            <button class="px-5 py-3 text-brand-700 hover:text-brand-900 font-bold focus:outline-none">-</button>
+                            <span class="w-10 text-center font-medium">1</span>
+                            <button class="px-5 py-3 text-brand-700 hover:text-brand-900 font-bold focus:outline-none">+</button>
+                        </div>
+                        <button class="flex-1 bg-brand-900 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-brand-800 transition-all shadow-xl hover:shadow-brand-900/30 flex justify-center items-center gap-2" onclick="alert('Added to your exquisite cart!')">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- Accordions for Details -->
+                    <div class="border-t border-brand-200 pt-6 space-y-4">
+                        <details class="group" open>
+                            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-brand-900">
+                                <span>Benefits</span>
+                                <span class="transition group-open:rotate-180">
+                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                                </span>
+                            </summary>
+                            <div class="text-gray-600 text-sm mt-3 pt-3 border-t border-brand-100 flex flex-col gap-2">
+                                <p>✓ Deep, 24-hour cellular hydration</p>
+                                <p>✓ Visibly firms and plumps skin</p>
+                                <p>✓ Smooths the appearance of fine lines</p>
+                            </div>
+                        </details>
+                        <details class="group">
+                            <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-brand-900">
+                                <span>How to Use</span>
+                                <span class="transition group-open:rotate-180">
+                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                                </span>
+                            </summary>
+                            <div class="text-gray-600 text-sm mt-3 pt-3 border-t border-brand-100 pb-2">
+                                After cleansing and toning, warm a pearl-sized amount between fingertips. Massaging gently in upward strokes onto face and neck. Suitable for morning and night.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-brand-50 pt-20 pb-10 mt-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-500 text-sm">&copy; 2026 SMJ Cosmetics. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
